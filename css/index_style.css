@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Mako|Questrial|Quicksand');
+
+p {
+	color: #30426d;
+	font-family: "Quicksand";
+}
+
+h1 {
+	color: #30426d;
+	font-family: "Questrial";
+}
+
+h2 {
+	color: #30426d;
+	font-family: "Questrial";
+}
+
+.banner {
+	background-color: #fcfcfc;
+	min-height: 750px;
+}
+
+.banner-text {
+	padding-top: 28%;
+}
+
+.banner-text h1 {
+	font-size: 100px;
+}
+
+.banner-text p {
+	font-size: 30px;
+}
+
+.row {
+	min-height: 100%;
+}
+
+#header {
+	position: absolute;
+	width: 100%;
+}
+
+#header .header-content {
+	margin: 0 auto;
+	max-width: 90%;
+	padding: 60px 0;
+	width: 100%;
+}
+
+#header .header-content a:hover {
+  color: #7f8c8d;
+}
+
+#header .logo {
+	max-width: 100px;
+}
+
+.navigation {
+	float: right;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation a {
+	color: #30426d;
+	font-family: "Exo";
+	font-size: 20px;
+	margin-left: 40px;
+}
+
+.navigation a:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+#introduction {
+	background-color: #fff;
+	min-height: 750px;
+}
+
+#introduction .sample {
+	min-height: 500px;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+#introduction .sample img {
+	min-width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+#introduction .information {
+	min-height: 500px;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+#introduction .information h1 {
+	font-size: 50px;
+	margin-right: 20%;
+	/*margin-left: 10%;*/
+}
+
+#introduction .information h2 {
+	font-size: 30px;
+	margin-right: 20%;
+	/*margin-left: 10%;*/
+	text-align: center;
+}
+
+#introduction .information p {
+	font-size: 20px;
+	margin-right: 20%;
+	/*margin-left: 10%;*/
+}
+
+.information .buttons {
+	margin-right: 20%;
+	/*margin-left: 10%;*/
+}
+
+.information .newsletter {
+	margin-right: 10%;
+	font-size: 20px;
+	font-family: "Exo";
+	color: #000;
+	width: 100%;
+	background-image: linear-gradient(lightgrey, darkgrey);
+	padding: 15px;
+	margin: 40px 2px;
+	border-radius: 40px;
+}
+
+.information .pix {
+	margin-right: 10%;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Exo";
+	width: 45%;
+	background-image: linear-gradient(to right, #3c4575, #845aac);
+	padding: 15px;
+	margin: 4px 2px;
+	border-radius: 40px;
+}
+
+#pixels {
+	background-image: linear-gradient(to right, #3c4575, #845aac);
+	min-height: 700px;
+}
+
+#pixels .information {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	min-height: 100%;
+}
+
+#pixels .sample {
+	padding-top: 15%;
+	padding-bottom: 10%;
+	min-height: 100%;
+}
+
+#pixels .sample img {
+	min-width: 250px;
+	display: block;
+	margin: 0 auto;
+}
+
+#pixels .information h1 {
+	font-size: 50px;
+	margin-left: 20%;
+	color: #fff;
+}
+
+#pixels .information p {
+	font-size: 20px;
+	margin-left: 20%;
+	color: #fff;
+}
+
+#features {
+	background-color: #fff;
+	height: 100%;
+}
+
+#features .sample {
+	min-height: 500px;
+	padding-top: 20%;
+	padding-bottom: 10%;
+}
+
+#features .sample img {
+	min-width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+
+#features .information {
+	min-height: 500px;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+#features .information h1 {
+	font-size: 50px;
+	margin-right: 20%;
+}
+
+#features .information p {
+	font-size: 20px;
+	margin-right: 20%;
+}
+
+/* .credits {
+	background-color: #525283;
+	min-height: 350px;
+}
+
+#footer .footer-content {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.footer-content .links {
+	color: #fff;
+	text-decoration: none;
+	font-family: "Quicksand";
+	font-size: 20px;
+}
+
+.footer-content p {
+	color: #fff;
+	font-family: "Quicksand";
+	font-size: 20px;
+} */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #58c0b77a;
+}
+
+.logo{
+  width: 25%;
+}
+
+.navbar{
+  background-color: #ecf0f1;
+}
+
+footer {
+  /* padding: 25px 0; */
+  text-align: center;
+
+}
+.footer-bg{
+  position: static;
+    bottom: -2px;
+    width: 100%;
+    background-color: #212529;
+    margin-right: 0;
+    height: 12vh;
+    padding: 10px;
+}
+footer span.copyright {
+  color: #58c0b7;
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+footer ul.quicklinks {
+  color: #58c0b7;
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+footer ul.social-buttons {
+  margin-bottom: 0;
+}
+
+footer ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+footer ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #58c0b785;
+}
+
+footer a {
+  color: #58c0b7;
+}
+
+footer a:hover {
+  color: #7f8c8d;
+}
