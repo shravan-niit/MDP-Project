@@ -143,6 +143,7 @@ input[type=submit] {
 }
 
 .submit,.erase{
+  
     font-family: "Montserrat", sans-serif;
     border: 0;
     border-radius: 40px;
@@ -150,6 +151,9 @@ input[type=submit] {
     background-color: #212529b5;
     color: white;
 
+}
+.submit:focus , .erase:focus{
+  outline: 0;
 }
 
 .submit:hover, .erase:hover{
