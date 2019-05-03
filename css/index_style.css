@@ -141,14 +141,14 @@ h2 {
 	font-size: 20px;
 	font-family: "Exo";
 	width: 45%;
-	background-image: linear-gradient(to right, #3c4575, #845aac);
+	background-image: linear-gradient(to right, #4daaa4, #212529b8);
 	padding: 15px;
 	margin: 4px 2px;
 	border-radius: 40px;
 }
 
 #pixels {
-	background-image: linear-gradient(to right, #3c4575, #845aac);
+	background-image: linear-gradient(to right, #4daaa4, #212529b8);
 	min-height: 700px;
 }
 

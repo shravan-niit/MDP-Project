@@ -1,25 +1,29 @@
-let canvas = document.getElementById("pixel_canvas");
-let height = document.getElementById("input_height");
-let width = document.getElementById("input_width");
-let sizePicker = document.getElementById("sizePicker");
-let color = document.getElementById("colorPicker");
-let remcolor = document.getElementById("btn");
+var canvas = document.getElementById("pixel_canvas");
+var height = document.getElementById("input_height");
+var width = document.getElementById("input_width");
+var sizePicker = document.getElementById("sizePicker");
+var color = document.getElementById("colorPicker");
+var lheight = document.getElementById("input_height_l");
+var lwidth = document.getElementById("input_width_l");
 color.addEventListener("click", function(){});
-let row;
-let cell;
+
 sizePicker.onsubmit = function(event){
     event.preventDefault();
     clearGrid();
     makeGrid();
+    grid1();
 };
+
 function makeGrid() {
-    {
+    {   
         for (let r=0; r<height.value; r++){
-        row = canvas.insertRow(r);
+        const row = canvas.insertRow(r);
         for (let c=0; c<width.value; c++){
-            cell = row.insertCell(c);
+            const cell = row.insertCell(c);
+          
+            
             cell.addEventListener("click", fillSquare);
-          var bools = false;
+            var bools = false;
   document.querySelector('#pixel_canvas').addEventListener('mousedown', function(){
     bools=true;
   });
@@ -34,20 +38,32 @@ function makeGrid() {
    bools=false;
   });
 
-
              }
     
         }
     }
    
 }
-function clearGrid(){
-    while (canvas.firstChild){
-         canvas.removeChild(canvas.firstChild);
-    }
+function grid1(){
+   var pixel1 = document.getElementsByTagName('tr');
+   console.log("tr done!! ");
+  for(var i=0;i<pixel1.length;i++){
+    pixel1[i].setAttribute("style", `height: ${lheight.value}px`);
+       console.log("tr length done!! "+ i + lheight.value);
+
+ }
+  var pixel = document.getElementsByTagName('td');
+  for(var i=0;i<pixel.length;i++){
+    pixel[i].setAttribute("style", `width: ${lwidth.value}px`);
+ }
+
 }
 function fillSquare () {
     this.setAttribute("style", `background-color: ${color.value}`);
 }
 
-
+function clearGrid(){
+    while (canvas.firstChild){
+         canvas.removeChild(canvas.firstChild);
+    }
+}

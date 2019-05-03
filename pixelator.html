@@ -15,6 +15,11 @@
 </head>
 
 <body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script async src="js/pixelator_script.js"></script>
+<script async src="js/caman.full.min.js"></script>
 	<nav class="navbar navbar-expand-lg navbar-dark static-top">
   <div class="container">
     <a class="navbar-brand" href="#">
@@ -40,20 +45,41 @@
   </div>
 </nav>
  <section>
-    <div class="container canvas">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
-           <form id="frm1" onsubmit="submitImageURL()">
-      Image URL: 
-      <input type="text" id="ImageURL" name="ImageURL"  required>
-      <button type="button" text ="submit" onclick="submitImageURL()"> Submit </button>
+           <form class="search-box" onsubmit="submitImageURL()">
+      
+            <input class="search-txt" type="text" placeholder="Enter Image URL"id="ImageURL" name="ImageURL"  required>
+      <a class="search-btn" href="#" onclick="submitImageURL()">
+        <i class="fas fa-search"></i>
+         </a>
+         <input id="blocks" type="range" min="1" max="100" value="50" oninput="sliderChange(this.value)">
+          <span id="sliderVal"><p>Pixelate : <output id="output"></output></p></span>
     </form>
+
+         
+    </div>
         </div>
       </div>
-      </div>
-    </section>
- <input id="blocks" type="range" min="1" max="50" value="100">
- </section>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div id="container-img"> 
+      
+    </div>
+  </div>
+</section>
+<section class="editor-btn">
+<div class="editor-buttons">
+  <input type="file" id="upload-file" placeholder="Upload a Picture" />
+  <label for="upload-file">Upload a Picture</label>
+  <button id="download-btn"><i class="fas fa-file-download"></i></button>
+  <br/>
+</div>
+</section>
+
 
 <footer>
     <div class="container footer-bg">
@@ -64,7 +90,7 @@
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://github.com/shravan-niit/MDP-Project">
                 <i class="fab fa-github"></i>
               </a>
             </li>
@@ -72,9 +98,6 @@
         </div>
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
             <li class="list-inline-item">
               <a href="#">Terms of Use</a>
             </li>
@@ -84,8 +107,6 @@
     </div>
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script async src="js/pixelator_script.js"></script>
+
+</body>
 </html>
